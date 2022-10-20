@@ -67,7 +67,7 @@ public class Facade {
                     String line2 = scnr2.nextLine();
                     if (line2.contains(struse) && line2.contains(strpas)) {
                         flags = 2;
-                        System.out.println("@@@Bridge Pattern!@@@");
+                        //System.out.println("@@@Bridge Pattern!@@@");
                         System.out.println("Setting as a SELLER");
                         System.out.println("You are selling...");
                         File relevance = new File("UserProduct.txt");
