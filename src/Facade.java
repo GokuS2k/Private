@@ -9,7 +9,7 @@ public class Facade {
 
 
         System.out.println("###Facade Pattern!###");
-        //retry:
+        //retry://Getting username ans password
         int passchk = 0;
         int flagb = 0;
         String struse = null;
@@ -36,7 +36,7 @@ public class Facade {
                 if (line.contains(struse) && line.contains(strpas)) {
                     flagb = 1;
                     System.out.println("@@@Bridge Pattern!@@@");
-                    System.out.println("Setting as a BUYER");
+                    System.out.println("Setting as a BUYER");//Setting as a buyer based on the profile
                     System.out.println("You are buying...");
                     File relevance = new File("UserProduct.txt");
                     Scanner screl = new Scanner(relevance);
@@ -67,8 +67,8 @@ public class Facade {
                     String line2 = scnr2.nextLine();
                     if (line2.contains(struse) && line2.contains(strpas)) {
                         flags = 2;
-                        //System.out.println("@@@Bridge Pattern!@@@");
-                        System.out.println("Setting as a SELLER");
+                        System.out.println("@@@Bridge Pattern!@@@");
+                        System.out.println("Setting as a SELLER");//Setting as a seller based on the profile
                         System.out.println("You are selling...");
                         File relevance = new File("UserProduct.txt");
                         Scanner screl = new Scanner(relevance);
@@ -152,7 +152,7 @@ public class Facade {
 //        }
 
         System.out.println("$$$Factory Method!$$$");
-        System.out.println("Enter your choice: 1. Meat  2. Produce:");
+        System.out.println("Enter your choice: 1. Meat  2. Produce:");//Choice of food
         Scanner scnr5 = new Scanner(System.in);
         int input = scnr5.nextInt();
         //System.out.println("$$$Factory Method!$$$");
